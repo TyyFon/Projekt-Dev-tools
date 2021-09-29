@@ -1,0 +1,91 @@
+/*Variables*/
+$font-header: 'Nunito' , 'sans-serif';
+$font-text: 'Merriweather' , 'sans-serif';
+$color-gold: #ffff00;
+/*Body*/
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+/*splash*/
+.splash {
+    max-width: 1140px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    background-image: url("https://images.pexels.com/photos/389819/pexels-photo-389819.jpeg");
+    background-size: 100%;
+}
+.navigation {
+    display: inline;
+    .navbar-brand {
+        color: $color-gold;
+        font-family: $font-header;
+        font-size: 48px;
+        padding: 0 0 0 96px;
+        margin: 16px 0;
+    }
+    ul {
+        list-style: none;
+        padding: 0 0 0 240px;
+        li {
+            display: inline-block;
+            position: relative;
+            padding: 0 10px;
+            a {
+                text-decoration: none;
+                font-family: $font-text;
+                color: #ffffff;
+            }
+        }
+    }
+}
+.splash-inner {
+    position: absolute;
+    object-fit: cover;
+    padding: 96px;
+    margin-left: 140px;
+    h1 {
+        font-family: $font-header;
+        font-size: 46px;
+        color: #ffffff;
+        width: 800px;
+        position: absolute;
+        object-fit: cover;
+    }
+    h2 {
+        font-family: $font-text;
+        font-size: 24px;
+        width: 400px;
+        color: #ffffff;
+        position: absolute;
+        object-fit: cover;
+    }
+    .splash-btn {
+        position: absolute;
+        margin: 120px 0 0 140px;
+        width: 120px;
+        color: #ffffff;
+        font-family: $font-text;
+        font-size: 14px;
+        border-width: 20px;
+        border-color: $color-gold;
+    }
+}
+/*service*/
+.service {
+    justify-content: center;
+    .service-header {
+        justify-items:  center;
+    }
+}
+
+/*portfolio*/
+
+.portfolio-foto {
+    width: 100%;
+    height:100%;
+}    
