@@ -1,7 +1,7 @@
 /*Variables*/
 $font-header: 'Nunito' , 'sans-serif';
 $font-text: 'Merriweather' , 'sans-serif';
-$color-gold: #ffff00;
+$color-gold: #e2c156f6;
 /*Body*/
 body {
     margin: 0;
@@ -25,6 +25,7 @@ body {
         color: $color-gold;
         font-family: $font-header;
         font-size: 48px;
+        font-style: italic;
         padding: 0 0 0 96px;
         margin: 16px 0;
     }
@@ -59,32 +60,62 @@ body {
     h2 {
         font-family: $font-text;
         font-size: 24px;
+        font-style: italic;
         width: 400px;
         color: #ffffff;
         position: absolute;
         object-fit: cover;
     }
-    .splash-btn {
-        position: absolute;
-        margin: 120px 0 0 140px;
-        width: 120px;
-        color: #ffffff;
-        font-family: $font-text;
-        font-size: 14px;
-        border-width: 20px;
-        border-color: $color-gold;
-    }
+}
+.splash-btn {
+    position: absolute;
+    margin: 120px 0 0 140px;
+    width: 120px;
+    color: #ffffff;
+    font-family: $font-header;
+    font-size: 10px;
+    text-decoration: none;
+    border-style: solid;
+    background: $color-gold;
+    border-width: 1px;
+    border-color: $color-gold;
 }
 /*service*/
 .service {
     justify-content: center;
+    text-align: center;
     .service-header {
         justify-items:  center;
+        h1 {
+            font-family: $font-header;
+        }
+        p {
+            font-family: $font-text;
+            font-style: italic;
+        }
+    }
+    .service-card {
+        padding-top: 36px;
+        i {
+            color: $color-gold;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            padding-top: 5px;
+        }
+        h2 {
+            font-family: $font-header;
+        }
+        p {
+            font-family: $font-text;
+        }
     }
 }
 
 /*portfolio*/
-
 .portfolio-foto {
     width: 100%;
     height:100%;
