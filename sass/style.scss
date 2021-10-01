@@ -184,6 +184,35 @@ footer {
 }
 .footer-box {
     background-color: white;
-    width: 100%;
-    margin-left: 0;
 }
+@media (max-width: 767px) {
+    .navigation {
+        ul {
+            padding: 0;
+            font-size: 12px;
+        }
+    }
+    .splash-inner {
+        /*width: 900px;
+        height: 400px;*/
+        margin: 0 0 0 40px;
+        text-align: left;
+        h1 {
+            font-size: 24px;
+            line-height: 40px;
+        }
+        h2 {
+            font-size: 12px;
+        }
+    }
+    .splash-btn {
+      margin: 140px 0 0 100px;
+      width: 75px;
+    }
+    footer {
+        ul {
+            padding-left: 120px;
+        }
+    }
+
+}    
