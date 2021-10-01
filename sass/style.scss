@@ -17,7 +17,9 @@ body {
     text-align: center;
     position: relative;
     background-image: url("https://images.pexels.com/photos/389819/pexels-photo-389819.jpeg");
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .navigation {
     display: inline;
@@ -45,38 +47,20 @@ body {
     }
 }
 .splash-inner {
-    position: absolute;
-    object-fit: cover;
-    width: 900px;
-    height: 400px;
-    margin-left: 140px;
-    display: flex;
-    align-items: baseline;
-    h1 {
+    text-align: center;
+       h1 {
         font-family: $font-header;
         font-size: 46px;
         color: #ffffff;
-        width: 800px;
-        position: absolute;
-        object-fit: cover;
-        line-height: 120px;
     }
     h2 {
         font-family: $font-text;
         font-size: 24px;
         font-style: italic;
-        width: 800px;
         color: #ffffff;
-        position: absolute;
-        object-fit: cover;
-        line-height: 8px;
     }
 }
 .splash-btn {
-    position: absolute;
-    margin: 140px 0 0 340px;
-    width: 120px;
-    height: 30px;
     color: #ffffff;
     font-family: $font-header;
     font-size: 10px;
@@ -84,6 +68,7 @@ body {
     border-style: solid;
     background: $color-gold;
     border-color: $color-gold;
+    padding: 5px 15px;
 }
 /*service*/
 .service {
@@ -125,6 +110,8 @@ body {
     background-color: lightgrey;
 }
 .port-box {
+    display: flex;
+    align-items: center;
     flex-direction: column;
     text-align: center;
     .portfolio {
@@ -193,10 +180,6 @@ footer {
         }
     }
     .splash-inner {
-        /*width: 900px;
-        height: 400px;*/
-        margin: 0 0 0 40px;
-        text-align: left;
         h1 {
             font-size: 24px;
             line-height: 40px;
@@ -204,10 +187,6 @@ footer {
         h2 {
             font-size: 12px;
         }
-    }
-    .splash-btn {
-      margin: 140px 0 0 100px;
-      width: 75px;
     }
     footer {
         ul {

@@ -15,7 +15,9 @@ body {
   text-align: center;
   position: relative;
   background-image: url("https://images.pexels.com/photos/389819/pexels-photo-389819.jpeg");
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .navigation {
@@ -49,41 +51,23 @@ body {
 }
 
 .splash-inner {
-  position: absolute;
-  object-fit: cover;
-  width: 900px;
-  height: 400px;
-  margin-left: 140px;
-  display: flex;
-  align-items: baseline;
+  text-align: center;
 }
 
 .splash-inner h1 {
   font-family: "Nunito", "sans-serif";
   font-size: 46px;
   color: #ffffff;
-  width: 800px;
-  position: absolute;
-  object-fit: cover;
-  line-height: 120px;
 }
 
 .splash-inner h2 {
   font-family: "Merriweather", "sans-serif";
   font-size: 24px;
   font-style: italic;
-  width: 800px;
   color: #ffffff;
-  position: absolute;
-  object-fit: cover;
-  line-height: 8px;
 }
 
 .splash-btn {
-  position: absolute;
-  margin: 140px 0 0 340px;
-  width: 120px;
-  height: 30px;
   color: #ffffff;
   font-family: "Nunito", "sans-serif";
   font-size: 10px;
@@ -91,6 +75,7 @@ body {
   border-style: solid;
   background: #e2c156f6;
   border-color: #e2c156f6;
+  padding: 5px 15px;
 }
 
 /*service*/
@@ -141,6 +126,8 @@ body {
 }
 
 .port-box {
+  display: flex;
+  align-items: center;
   flex-direction: column;
   text-align: center;
 }
@@ -219,22 +206,12 @@ footer ul li i {
     padding: 0;
     font-size: 12px;
   }
-  .splash-inner {
-    /*width: 900px;
-        height: 400px;*/
-    margin: 0 0 0 40px;
-    text-align: left;
-  }
   .splash-inner h1 {
     font-size: 24px;
     line-height: 40px;
   }
   .splash-inner h2 {
     font-size: 12px;
-  }
-  .splash-btn {
-    margin: 140px 0 0 100px;
-    width: 75px;
   }
   footer ul {
     padding-left: 120px;
